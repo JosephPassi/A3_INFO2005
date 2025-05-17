@@ -1,12 +1,13 @@
 h1{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Ubuntu';
     size: 38pt;
     font-weight: bolder;
     text-align: center;
 }
 
 p{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Ubuntu';
+    font-style: italic;
     size: 20pt;
 }
 
