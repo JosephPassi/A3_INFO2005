@@ -1,13 +1,32 @@
 h1{
-    font-family: 'Ubuntu';
-    size: 38pt;
-    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36pt;
+    font-weight: 900;
     text-align: center;
 }
 
 p{
-    font-family: 'Ubuntu';
+    font-family: 'Rubik';
     font-style: italic;
-    size: 20pt;
+    font-size: 12pt;
 }
 
+nav{
+    font-family: "Montserrat", sans-serif;
+    font-size: 14pt;
+    font-weight: 600;
+    
+}
+
+
+/* Have a look at the following (maintain a vertical menu since we don't want to detract from the main focus, being the products 
+
+Side Navigation (animations included): https://www.w3schools.com/howto/howto_js_sidenav.asp
+Vertical Menu: https://www.w3schools.com/howto/howto_css_vertical_menu.asp
+Off-Canvas Menu: https://www.w3schools.com/howto/howto_js_off-canvas.asp
+
+
+Horizontal Nav Bar Appearing when Scrolling: https://www.w3schools.com/howto/howto_js_navbar_slide.asp
+
+
+*/
