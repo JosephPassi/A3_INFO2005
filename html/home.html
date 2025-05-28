@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plenty of Games</title>
     <link rel="stylesheet" href="/css/typography.css">
-
+    <link rel="stylesheet" href="/css/layout.css">
+    <script src="/js/navBar.js"></script>
     <!-- Imports Google Font: Monserrat & Rubik -->
+    <!-- These fonts were changed due to heavy re-evaluation, these fonts were deemed to be more better suited and also provided benefits that a single font (with multiple weights) could not offer. In short, the original font was aight, but this is better -->
     <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); </style>
 
 
@@ -19,21 +21,18 @@
 <body>
 
     <!-- This section is dedicated to the NavBar (TCG Singles, TCG Sealed, Card Accessories, Merchandise, Search, Cart, Wishlist, Account) -->
-    <nav>
-        <ul>
-            <a href="home.html">SINGLES</a>        
-            <a href="home.html">PACKS</a>
-            <a href="home.html">ACCESSORIES</a>
-            <a href="home.html">MERCHANDISE</a>
-            <a href="home.html">SEARCH</a>
-            <a href="home.html">CART</a>
-            <a href="home.html">WISHLIST</a>
-            <a href="home.html">ACCOUNT</a>
+    <!-- The side navigation bar was built using tutorials and guidance from W3Schools (The GOATs) -->
+    <div id="mySidenav" class="sideNav">
+    
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    
+    </div>
 
-
-
-        </ul>
-    </nav>
+    <span onclick="openNav()">Open</span>
 
     <!-- This section is dedicated to the Main Content of the page (Slideshow gallery, Animated brands, Product Categories, Events, About Us) -->
     <main>
@@ -58,4 +57,15 @@
     <!-- All things seem to be working! All systems are go!  -->
 
 </body>
+
 </html>
+
+<!-- Have a look at the following (maintain a vertical menu since we don't want to detract from the main focus, being the products 
+
+Side Navigation (animations included): https://www.w3schools.com/howto/howto_js_sidenav.asp
+Vertical Menu: https://www.w3schools.com/howto/howto_css_vertical_menu.asp
+Off-Canvas Menu: https://www.w3schools.com/howto/howto_js_off-canvas.asp
+
+
+Horizontal Nav Bar Appearing when Scrolling: https://www.w3schools.com/howto/howto_js_navbar_slide.asp -->
+
