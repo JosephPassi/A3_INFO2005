@@ -1,3 +1,7 @@
+.center{
+    text-align: center;
+}
+
 /* Default Button Format */
 .button{
     display: inline-block;

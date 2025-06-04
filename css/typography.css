@@ -4,12 +4,12 @@ h1{
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;
     font-weight: 900;
-    text-align: center;
+    
 }
 
 p{
     font-family: 'Rubik';
-    font-style: italic;
+    font-weight: 450;
     font-size: 1rem;
 }
 
