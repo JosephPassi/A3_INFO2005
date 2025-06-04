@@ -1,0 +1,11 @@
+/* Default Button Format */
+.button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s;
+    font-family: "Montserrat", sans-serif;
+}
+

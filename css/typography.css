@@ -1,6 +1,8 @@
+/* By default 1rem is set to 16px (apparently?) */
+
 h1{
     font-family: "Montserrat", sans-serif;
-    font-size: 36pt;
+    font-size: 5rem;
     font-weight: 900;
     text-align: center;
 }
@@ -8,14 +10,30 @@ h1{
 p{
     font-family: 'Rubik';
     font-style: italic;
-    font-size: 12pt;
+    font-size: 1rem;
 }
 
 nav{
     font-family: "Montserrat", sans-serif;
-    font-size: 14pt;
+    font-size: 1.5rem;
     font-weight: 600;
     
+}
+
+.button{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+}
+
+.button--small{
+    font-size: 1rem;
+    
+}
+
+.button--large{
+    font-size: 2rem;
 }
 
 
