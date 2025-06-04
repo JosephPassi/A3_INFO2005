@@ -1,0 +1,25 @@
+img#logo{
+    height: 100px;
+    width: 100px;
+}
+
+.hero-image {
+  /* Background image with overlay */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/images/hero-magic.jpg");
+  
+  /* Fill the viewport height */
+  height: 50vh;
+  
+  /* Cover the entire area */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+
+.hero-text {
+  color: white;
+  padding: 2rem;
+  max-width: 90%;
+}

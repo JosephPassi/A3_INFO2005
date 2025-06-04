@@ -4,7 +4,7 @@ h1{
     font-family: "Montserrat", sans-serif;
     font-size: 5rem;
     font-weight: 900;
-    
+
 }
 
 p{
@@ -20,21 +20,36 @@ nav{
     
 }
 
+a.button{
+    text-transform: uppercase;
+}
+
 .button{
     text-decoration: none;
-    text-transform: capitalize;
+    text-transform:uppercase;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
 }
 
 .button--small{
     font-size: 1rem;
+
     
 }
 
 .button--large{
     font-size: 2rem;
+
 }
+
+/* Nav Bar Links */
+.cluster > *{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.6rem;
+
+}
+
 
 
 /* Have a look at the following (maintain a vertical menu since we don't want to detract from the main focus, being the products 

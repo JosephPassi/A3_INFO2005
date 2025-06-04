@@ -1,6 +1,7 @@
-.center{
-    text-align: center;
+body,html{
+    height: 100%;
 }
+
 
 /* Default Button Format */
 .button{
@@ -12,4 +13,28 @@
     transition: all 0.3s;
     font-family: "Montserrat", sans-serif;
 }
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+}
+
+.cluster > *{
+    margin: 1rem;
+}
+
+
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
 

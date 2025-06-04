@@ -6,24 +6,32 @@
 .button--small{
     color: black;
     background-color: #F2BF1A;
+    border: 2px solid #F2BF1A;
+
     
 }
 
 .button--small:hover{
     color: #F2BF1A;
     background-color: black;
+    border: 2px solid #F2BF1A;
+
     
 }
 
 .button--large{
     color: black;
     background-color: #F2BF1A;
+    border: 2px solid #F2BF1A;
+
 
 }
 
 .button--large:hover{
     color: #F2BF1A;
     background-color: black;
+    border: 2px solid #F2BF1A;
+
 }
 
 .button--danger{
@@ -37,5 +45,17 @@
     color: #4A174D;
     background-color: white;
     border: 2px solid #4A174D;
+
+}
+
+/* Colour of the Nav Bar background */
+.cluster {
+    background-color: #4A174D;
+    
+}
+
+.cluster > *{
+    color: #f2f2f2;  /* Colour of Nav Bar links */
+    /* background-color: orange;  Background for each of the Nav Bar elements individually */
 
 }
