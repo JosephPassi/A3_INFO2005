@@ -20,6 +20,17 @@ nav{
     
 }
 
+/* Responsible for Nav Bar Links */
+.nav-link{
+    transition: ease-in-out 0.3s;
+    
+}
+
+.nav-link:hover{
+    transform: scale(110%);
+}
+
+/* Responsible for any Buttons */
 a.button{
     text-transform: uppercase;
 }
@@ -49,6 +60,8 @@ a.button{
     font-size: 1.6rem;
 
 }
+
+
 
 
 

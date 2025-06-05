@@ -50,7 +50,7 @@
 
 /* Colour of the Nav Bar background */
 .cluster {
-    background-color: #4A174D;
+    background-color: #49124c;
     
 }
 
@@ -58,4 +58,9 @@
     color: #f2f2f2;  /* Colour of Nav Bar links */
     /* background-color: orange;  Background for each of the Nav Bar elements individually */
 
+}
+
+/* Responsible for Nav Bar Links */
+.nav-link:hover{
+    color: #F2BF1A;
 }
