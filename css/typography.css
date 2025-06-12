@@ -15,7 +15,6 @@ p{
 
 nav{
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5rem;
     font-weight: 600;
 
     
@@ -27,13 +26,13 @@ nav{
     text-decoration: none;
     list-style-type: none;
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 
     
 }
 
 .nav-link:hover{
-    transform: scale(110%);
+    transform: scale(1.1);
 }
 
 /* Responsible for any Buttons */
@@ -59,10 +58,7 @@ a.button{
 
 }
 
-/* Nav Bar Links */
-/* .cluster > *{
 
-} */
 
 
 

@@ -60,11 +60,15 @@ table {
 	border-spacing: 0;
 }
 
+main{
+	margin-top: 136px;  /* Accounts for the height of the Nav Bar, since the Nav Bar is fixed (this was just done manually so it might need further adjusting */
+}
 
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px; /* optional but recommended baseline */
   line-height: 1.5;
+  padding-bottom: 100vh;
 }
 
 h1 {

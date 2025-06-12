@@ -1,7 +1,19 @@
-img#logo{
-    height: 100px;
-    width: 100px;
+
+/* Responsible for the Company Icon within the Nav Bar */
+#logo{
+    height: 80px;
+    width: 80px;
 }
+
+/* Adds a white background behind the image, making it more visible for users */
+.logo-wrapper {
+  background-color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 100px; 
+}
+
+
+/* ================================================ */
 
 .hero-image {
   /* Background image with overlay */
