@@ -23,7 +23,7 @@ nav{
 
 /* Responsible for Nav Bar Links */
 .nav-link{
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.2s;
     text-decoration: none;
     list-style-type: none;
     font-weight: 700;
