@@ -15,25 +15,36 @@
     <!-- ### This section is dedicated to the NavBar (TCG Singles, TCG Sealed, Card Accessories, Merchandise, Search, Cart, Wishlist, Account) ### -->
 
     
-    <nav class="cluster">
-        <div class="logo-wrapper">
-            <img src="/images/Primary_Logo_-_Purple_large.webp" alt="Plenty of Games logo" id="logo">
-        </div>
-        
-        <ul class="cluster">
-            <li> <a href="home.html" class="nav-link">SINGLES</a> </li>   
-            <li> <a href="home.html" class="nav-link">PACKS</a> </li> 
-            <li> <a href="home.html" class="nav-link">ACCESSORIES</a> </li> 
-            <li> <a href="home.html" class="nav-link">MERCHANDISE</a> </li> 
-        </ul>
+    <!-- Cleaned & Polished NavBar Structure -->
+    <nav class="nav-bar">
 
+    <!-- Styling responsible for: Site Logo - Positioned on the Left -->
+    <div class="nav-left">
+        <a href="home.html" class="logo-wrapper">
+        <img src="/images/Primary_Logo_-_Purple_large.webp" alt="Plenty of Games logo" id="logo">
+        </a>
+    </div>
 
-        <ul class="cluster">
-            <li> <a href="home.html" class="nav-link">SEARCH</a> </li>   
-            <li> <a href="home.html" class="nav-link">CART</a> </li> 
-            <li> <a href="home.html" class="nav-link">WISHLIST</a> </li> 
-            <li> <a href="home.html" class="nav-link">ACCOUNT</a> </li> 
-        </ul>
+    <!-- Center: Nav Links -->
+    <ul class="nav-links">
+        <li><a href="home.html" class="nav-link">SINGLES</a></li>
+        <li><a href="home.html" class="nav-link">PACKS</a></li>
+        <li><a href="home.html" class="nav-link">ACCESSORIES</a></li>
+        <li><a href="home.html" class="nav-link">MERCHANDISE</a></li>
+    </ul>
+
+    <!-- Right: Search and Icons -->
+    <div class="nav-right">
+        <form class="search-container">
+        <input type="text" placeholder="Search Our Catalog...">
+        <button type="submit">
+            <img src="/images/search.png" alt="Search Icon">
+        </button>
+        </form>
+        <a href="home.html"><img src="/images/shopping_cart.png" alt="Cart" class="nav-icon"></a>
+        <a href="home.html"><img src="/images/wishlist.png" alt="Wishlist" class="nav-icon"></a>
+        <a href="home.html"><img src="/images/account.png" alt="Account" class="nav-icon"></a>
+    </div>
     </nav>
     
 

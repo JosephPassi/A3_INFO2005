@@ -22,17 +22,18 @@ nav{
 
 /* Responsible for Nav Bar Links */
 .nav-link{
-    transition: ease-in-out 0.2s;
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: 700;
-    font-size: 1.5rem;
-
+  display: inline-block;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 700;
+  transition: color 0.2s ease-in-out;
     
 }
 
 .nav-link:hover{
-    transform: scale(1.1);
+  color: #F2BF1A;
+  transform: scale(1.05);
 }
 
 /* Responsible for any Buttons */

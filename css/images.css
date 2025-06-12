@@ -1,15 +1,24 @@
 
 /* Responsible for the Company Icon within the Nav Bar */
-#logo{
-    height: 80px;
-    width: 80px;
+.nav-icon {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
 }
+
+#logo {
+  height: 64px;
+  width: auto;
+  border-radius: 50%;
+}
+
 
 /* Adds a white background behind the image, making it more visible for users */
 .logo-wrapper {
   background-color: white;
   padding: 0.3rem 0.6rem;
-  border-radius: 100px; 
+  border-radius: 100px;
+  margin-left: 1rem;
 }
 
 

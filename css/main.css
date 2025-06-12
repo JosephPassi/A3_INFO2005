@@ -60,6 +60,13 @@ table {
 	border-spacing: 0;
 }
 
+/* CUSTOM STYLING (after CSS reset) */
+html{
+		background-color: rgb(245, 241, 220);
+
+}
+
+
 main{
 	margin-top: 136px;  /* Accounts for the height of the Nav Bar, since the Nav Bar is fixed (this was just done manually so it might need further adjusting */
 }
