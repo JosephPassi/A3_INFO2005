@@ -72,3 +72,25 @@ nav{
     transform: scale(1.05);
 }
 
+/* ARROWS & PROGRESS BUTTONS */
+/* Arrows */
+.prev, .next {
+  color: white;
+  background-color: rgba(0,0,0,0.3);
+}
+
+/* Dots */
+.dot {
+  background-color: #f2f2f2;
+  transition: background-color 0.3s ease;
+}
+
+.dot:hover{
+  background-color: #4A174D;
+}
+
+.dot.active {
+  background-color: #F2BF1A;
+
+}
+

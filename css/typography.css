@@ -41,7 +41,7 @@ nav{
   width: 0%;
   height: 2px;
   background-color: #F2BF1A;
-  transition: width 0.3s ease-in-out;
+  transition: width 0.2s ease-in-out;
 }
 
 /* on hover: expand underline */
@@ -73,24 +73,24 @@ a.button{
 }
 
 /* HERO IMAGE/BANNER STYLING */
-.hero-content {
+.hero-text {
+  position: absolute;
+  top: 53%;
+  left: 5vw;
+  transform: translateY(-50%);
   color: white;
-  text-align: left;
-  max-width: 50%;
-  padding-top: 2rem;
-  padding-left: 5rem;
+  max-width: 600px;
+  z-index: 2;
 }
 
-.hero-title {
+.hero-text h1 {
   font-size: 4rem;
-  font-weight: 900;
   font-family: "Montserrat", sans-serif;
-  text-transform: uppercase;
 }
 
-.hero-description {
-  font-size: 1.25rem;
+.hero-text p {
   font-family: "Rubik", sans-serif;
+  font-size: 1.25rem;
   margin: 1rem 0 2rem;
 }
 

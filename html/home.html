@@ -50,23 +50,48 @@
         <a href="home.html"><img src="/images/shopping_cart.png" alt="Cart" class="nav-icon"></a>
         <a href="home.html"><img src="/images/wishlist.png" alt="Wishlist" class="nav-icon"></a>
         <a href="home.html"><img src="/images/account.png" alt="Account" class="nav-icon"></a>
-        <!-- For some reason it needs 4 links here or else it will only display 2...fml' -->
+        <!-- For some reason it needs 4 links here or else it will only display 2...fml -->
         <a href="home.html"><img src="/images/account.png" alt="Account" class="nav-icon"></a>
 
     </div>
     </nav>
-    
+    <!-- ======================== ### END OF NAV ### ======================== -->
 
+    <!-- ### This section is dedicated to the Hero Banner section of the Page (responsible for drawing users in and displaying several popular products on offer) ### -->
+    <section class="hero-slideshow">
 
-    <header class="hero">
-        <div class="hero-overlay">
-            <div class="hero-content">
-            <h1 class="hero-title">Magic: The Gathering</h1>
-            <p class="hero-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab obcaecati nostrum ullam ea ad exercitationem delectus vel odit. Quaerat pariatur, fuga quae voluptas rerum eos incidunt quasi amet doloremque corporis!</p>
-            <a href="#" class="button button--large">Pre-Order</a>
+        <!-- Hero Banner being currently Displayed -->
+        <div class="hero-slide active">
+            <img src="/images/magic_bt.webp" alt="Magic: The Gathering TARKIR promotional material">
+            <div class="hero-text">
+            <h1>PRODUCT TITLE 1</h1>
+            <p>Description for product 1</p>
+            <a href="home.html" class="button button--large">Shop Now</a>
             </div>
         </div>
-    </header>
+
+        <!-- Hero Banner that is within the Slideshow Gallery, but isn't being initially displayed -->
+        <div class="hero-slide">
+            <img src="/images/magic_bt.webp" alt="Slide 2">
+            <div class="hero-text">
+            <h1>PRODUCT TITLE 2</h1>
+            <p>Description for product 2</p>
+            <a href="home.html" class="button button--large">Explore</a>
+            </div>
+        </div>
+
+        <!-- Arrows -->
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+
+        <!-- Dots -->
+        <div class="dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <!-- ======================== ### END OF HERO ### ======================== -->
+
 
     <!-- ### This section is dedicated to the Main Content of the page (Slideshow gallery, Animated brands, Product Categories, Events, About Us) ### -->
     <main>
@@ -101,16 +126,10 @@
     
     <!-- All things seem to be working! All systems are go!  -->
 
+
+
+    <script src="/js/heroBanner.js"></script>
 </body>
 
 </html>
-
-<!-- Have a look at the following (maintain a vertical menu since we don't want to detract from the main focus, being the products 
-
-Side Navigation (animations included): https://www.w3schools.com/howto/howto_js_sidenav.asp
-Vertical Menu: https://www.w3schools.com/howto/howto_css_vertical_menu.asp
-Off-Canvas Menu: https://www.w3schools.com/howto/howto_js_off-canvas.asp
-
-
-Horizontal Nav Bar Appearing when Scrolling: https://www.w3schools.com/howto/howto_js_navbar_slide.asp -->
 
