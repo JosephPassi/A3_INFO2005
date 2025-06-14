@@ -12,6 +12,7 @@ body,html{
     border-radius: 10px;
     transition: ease-in-out 0.3s;
     font-family: "Montserrat", sans-serif;
+
 }
 
 .cluster {
@@ -103,7 +104,6 @@ nav {
 }
 
 .search-container button {
-  background-color: #F2BF1A;
   border: none;
   border-radius: 50%;
   padding: 0.4rem;
@@ -117,7 +117,6 @@ nav {
 
 .search-container button:hover {
   transition: 0.2s;
-  background-color: #c79e16;
 }
 
 .search-container button img {
@@ -129,28 +128,39 @@ nav {
 .hero-slideshow {
   position: relative;
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   overflow: hidden;
 }
 
 .hero-slide {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  display: none; /* Slides are kept hidden by DEFAULT */
-  transition: opacity 0.8s ease;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+  z-index: 0;
+  pointer-events: none; /* Ensures users can't click elements that are hidden/invisible */
+
 }
 
 .hero-slide.active {
-  display: block; /* Only the "active" slide is to be displayed */
+  opacity: 1;
   z-index: 1;
+  pointer-events: auto;
+
+}
+
+.hero-slideshow {
+  position: relative;
+  overflow: hidden;
 }
 
 .hero-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: middle;
 }
 
 /* ARROWS & PROGRESS BUTTONS */
@@ -204,4 +214,41 @@ nav {
     text-align: right;
 }
 
+
+/* SMALLER SCREEN STYLING */
+/* Burger menu hidden on desktop */
+.burger-menu {
+  display: none;  /* hidden by default (shown only on mobile via media queries) */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.burger-icon {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .burger-menu {
+    display: block;  /* Appears on smaller screens (eg: mobile) */
+  }
+
+  .nav-links {
+    display: none;  /* Nav Links are hidden by default */
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #4A174D;
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .nav-links.show {
+    display: flex; /* shown when JS adds the .show class */
+  }
+}
 

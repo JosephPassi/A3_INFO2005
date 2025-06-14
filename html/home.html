@@ -14,12 +14,12 @@
 
     <!-- ### This section is dedicated to the NavBar (TCG Singles, TCG Sealed, Card Accessories, Merchandise, Search, Cart, Wishlist, Account) ### -->
 
-    
     <!-- Cleaned & Polished NavBar Structure -->
     <nav class="nav-bar">
 
     <!-- Styling responsible for: Site Logo - Positioned on the Left -->
     <div class="nav-left">
+        <button class="burger-menu" aria-label="Menu"><img src="/images/menu_stacked.png" alt="Menu Icon" class="burger-icon"></button>  <!-- Hidden on larger screens, only appearing on smaller ones where NavBar would be too large -->
         <a href="home.html" class="logo-wrapper">
         <img src="/images/Primary_Logo_-_Purple_large.webp" alt="Plenty of Games logo" id="logo">
         </a>
@@ -27,7 +27,7 @@
 
     <!-- Center: Nav Links -->
     <ul class="nav-links">
-        <li><a href="home.html" class="nav-link">SINGLE CARDS</a></li>
+        <li><a href="individualProduct.html" class="nav-link">SINGLE CARDS</a></li>
         <li><a href="home.html" class="nav-link">SEALED PACKS</a></li>
         <li><a href="home.html" class="nav-link">ACCESSORIES</a></li>
         <li><a href="home.html" class="nav-link">MINIATURES</a></li>
@@ -37,7 +37,6 @@
 
     <!-- Right: Search and Icons -->
     <div class="nav-right">
-        
         <!-- Search Bar -->
         <form class="search-container">
         <input type="text" placeholder="Search Our Catalog...">
@@ -52,51 +51,99 @@
         <a href="home.html"><img src="/images/account.png" alt="Account" class="nav-icon"></a>
         <!-- For some reason it needs 4 links here or else it will only display 2...fml -->
         <a href="home.html"><img src="/images/account.png" alt="Account" class="nav-icon"></a>
-
     </div>
     </nav>
     <!-- ======================== ### END OF NAV ### ======================== -->
 
+
     <!-- ### This section is dedicated to the Hero Banner section of the Page (responsible for drawing users in and displaying several popular products on offer) ### -->
     <section class="hero-slideshow">
 
-        <!-- Hero Banner being currently Displayed -->
-        <div class="hero-slide active">
-            <img src="/images/magic_bt.webp" alt="Magic: The Gathering TARKIR promotional material">
-            <div class="hero-text">
-            <h1>PRODUCT TITLE 1</h1>
-            <p>Description for product 1</p>
+    <!-- SLIDE #1 (0) -->
+    <div class="hero-slide active">
+        <div class="hero-gradient-wrapper">
+            <img src="/images/lorcana_aladdin.jfif" class="slide-img img-1" alt="Slide 1">
+            <div class="hero-gradient-overlay"></div>
+        </div>
+        <div class="hero-text">
+            <h1>Disney Lorcana</h1>
+            <p>Step into a magical realm where Disney characters come to life in this enchanting card game adventure.</p>
             <a href="home.html" class="button button--large">Shop Now</a>
-            </div>
         </div>
+    </div>
 
-        <!-- Hero Banner that is within the Slideshow Gallery, but isn't being initially displayed -->
-        <div class="hero-slide">
-            <img src="/images/magic_bt.webp" alt="Slide 2">
-            <div class="hero-text">
-            <h1>PRODUCT TITLE 2</h1>
-            <p>Description for product 2</p>
-            <a href="home.html" class="button button--large">Explore</a>
-            </div>
+    <!-- SLIDE #2 (1) -->
+    <div class="hero-slide">
+        <div class="hero-gradient-wrapper">
+            <img src="/images/magic_main.jpg" class="slide-img img-2" alt="Magic: The Gathering TARKIR promotional material">
+            <div class="hero-gradient-overlay"></div>
         </div>
-
-        <!-- Arrows -->
-        <a class="prev">&#10094;</a>
-        <a class="next">&#10095;</a>
-
-        <!-- Dots -->
-        <div class="dots">
-            <span class="dot active"></span>
-            <span class="dot"></span>
+        <div class="hero-text">
+            <h1>Magic: The Gathering</h1>
+            <p>Master powerful spells and dominate the battlefield in the original trading card strategy game.</p>
+            <a href="home.html" class="button button--large">Shop Now</a>
         </div>
+    </div>
+    <!-- SLIDE #3 (2) -->
+    <div class="hero-slide">
+        <div class="hero-gradient-wrapper">
+        <img src="/images/op_gang.jpg" class="slide-img img-3" alt="Slide 3">
+        <div class="hero-gradient-overlay"></div>
+        </div>
+        <div class="hero-text">
+        <h1>One Piece: Card Game</h1>
+        <p>Set sail with Luffy and crew in a fast-paced battle game inspired by the iconic anime and manga.</p>
+        <a href="home.html" class="button button--large">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- SLIDE #4 (3) -->
+    <div class="hero-slide">
+        <div class="hero-gradient-wrapper">
+        <img src="/images/fleshnblood_night_seas.jpg" class="slide-img img-4" alt="Slide 4">
+        <div class="hero-gradient-overlay"></div>
+        </div>
+        <div class="hero-text">
+        <h1>Flesh and Blood</h1>
+        <p>Engage in tactical, weapon-based combat with unique heroes in this immersive fantasy TCG.</p>
+        <a href="home.html" class="button button--large">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- SLIDE #5 (4) -->
+    <div class="hero-slide">
+        <div class="hero-gradient-wrapper">
+        <img src="/images/pokemon_trio.avif" class="slide-img img-5" alt="Slide 5">
+        <div class="hero-gradient-overlay"></div>
+        </div>
+        <div class="hero-text">
+        <h1>Pokemon: Trading Card Game</h1>
+        <p>Catch, train, and battle with your favorite Pokémon in the world's most beloved card game.</p>
+        <a href="home.html" class="button button--large">Shop Now</a>
+        </div>
+    </div>
+
+    <!-- Arrows -->
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+
+    <!-- Dots: Add more for every slide that is featured (else the JS won't function properly) -->
+    <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
     </section>
+
     <!-- ======================== ### END OF HERO ### ======================== -->
 
 
     <!-- ### This section is dedicated to the Main Content of the page (Slideshow gallery, Animated brands, Product Categories, Events, About Us) ### -->
     <main>
 
-        <h1 class="center">HOME PAGE</h1>
+        <h1 class="center">OUR COLLECTION</h1>
         <p class="center">This is the home page</p>
         <p class="center">This is additional content that was added to see if chnages are going through to repository</p>
 
