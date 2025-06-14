@@ -17,7 +17,9 @@
   height: 64px;
   width: auto;
   border-radius: 50%;
+  transform: translateY(3px);  /* Moves up the background circle to make sure the icon/logo in the NavBar is actually centred */
 }
+
 
 
 /* Adds a white background behind the image, making it more visible for users */

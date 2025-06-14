@@ -52,8 +52,13 @@
 nav{
     background-color: #4A174D;
     box-shadow: 0 5px 0 #F2BF1A;
+    /* box-shadow: 0 5px 0 #997F9B <<< Colour for smaller menu/when clicked (?) */
+;
+
 }
 
+
+/* Responsible for Nav Bar Links */
 
 .nav-link{
     color: #f2f2f2;  /* Colour of Nav Bar links */
@@ -61,8 +66,9 @@ nav{
 
 }
 
-/* Responsible for Nav Bar Links */
 
 .nav-link:hover{
     color: #F2BF1A;
+    transform: scale(1.05);
 }
+
