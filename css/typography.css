@@ -23,7 +23,6 @@ nav{
 .nav-link {
   position: relative;
   display: inline-block;
-  color: #f2f2f2;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.5rem;
@@ -40,7 +39,6 @@ nav{
   bottom: -2px; /* Determines the distance that the underline is from the Nav Link text */
   width: 0%;
   height: 2px;
-  background-color: #F2BF1A;
   transition: width 0.2s ease-in-out;
 }
 
@@ -98,7 +96,12 @@ a.button{
 
 }
 
+/* LOGO CAROUSEL TEXT STYLING */
+.carousel-text{
+  margin: 0;
+  text-align: center;
 
+}
 
 
 

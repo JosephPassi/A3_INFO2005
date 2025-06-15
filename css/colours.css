@@ -70,18 +70,21 @@ nav{
 
 
 /* Responsible for Nav Bar Links */
-
 .nav-link{
     color: #f2f2f2;  /* Colour of Nav Bar links */
     /* background-color: orange;  Background for each of the Nav Bar elements individually */
 
 }
 
-
 .nav-link:hover{
     color: #F2BF1A;
     transform: scale(1.05);
 }
+
+.nav-link::after {
+  background-color: #F2BF1A;
+}
+
 
 /* ARROWS & PROGRESS BUTTONS */
 /* Arrows */
