@@ -132,3 +132,8 @@ nav{
   hsla(0, 0%, 0%, 0) 100%
 );
 }
+
+/* FOOTER STYLING */
+.footer-header{
+ color: #F2BF1A;
+}

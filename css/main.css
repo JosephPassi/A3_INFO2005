@@ -61,11 +61,12 @@ table {
 }
 
 /* CUSTOM STYLING (after CSS reset) */
-html{
-		background-color: rgba(61, 55, 55, 0.603);
-
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #4A174D; /* Matches your footer */
 }
-
 
 body {
   font-family: "Montserrat", sans-serif;
