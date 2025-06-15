@@ -1,3 +1,6 @@
+main{
+  background-color: #f2f2f2;
+}
 .button{
     color: black;
     border: 2px solid black;   
@@ -35,7 +38,7 @@
 }
 
 .button--danger{
-    color: white;
+    color: #f2f2f2;
     background-color: #4A174D;
     border: 2px solid #4A174D;
 
@@ -43,7 +46,7 @@
 
 .button--danger:hover{
     color: #4A174D;
-    background-color: white;
+    background-color: #f2f2f2;
     border: 2px solid #4A174D;
 
 }
@@ -89,7 +92,7 @@ nav{
 /* ARROWS & PROGRESS BUTTONS */
 /* Arrows */
 .prev, .next {
-  color: white;
+  color: #f2f2f2;
   background-color: #4A174D;
 }
 

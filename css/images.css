@@ -22,14 +22,13 @@
 
 
 
-/* Adds a white background behind the image, making it more visible for users */
+/* Adds a #f2f2f2 background behind the image, making it more visible for users */
 .logo-wrapper {
-  background-color: white;
+  background-color: #f2f2f2;
   padding: 0.3rem 0.6rem;
   border-radius: 100px;
   margin-left: 1rem;
 }
-
 
 /* ================================================ */
 
@@ -64,5 +63,58 @@
   object-position: 20% 0%;
   transform: translateY(90px);
 
+}
+
+/* LOGO CAROUSEL STYLING */
+/* Creating an infinite logo carousel with pure CSS - https://www.youtube.com/watch?v=nAjR0Oj0J8E */
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: #f2f2f2;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f2f2f2);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f2f2f2);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 120px;
+  margin: 0 40px;
 }
 

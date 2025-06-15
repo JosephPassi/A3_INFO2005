@@ -216,26 +216,6 @@ nav {
     text-align: right;
 }
 
-
-/* SMALLER SCREEN STYLING */
-/* Burger menu hidden on desktop */
-.burger-menu {
-  display: none;  /* hidden by default (shown only on mobile via media queries) */
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-
-.burger-icon {
-  height: 32px;
-  width: 32px;
-  object-fit: contain;
-}
-
-
-
-
 /* SCROLLING ANIMATIONS STYLING */
 .section{
   margin-top: 0;
@@ -266,8 +246,23 @@ nav {
   }
 }
 
+/* SMALLER SCREEN STYLING */
+/* Burger menu hidden on desktop */
+.burger-menu {
+  display: none;  /* hidden by default (shown only on mobile via media queries) */
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
 
+.burger-icon {
+  height: 32px;
+  width: 32px;
+  object-fit: contain;
+}
 
+/* Smaller Screen Styling */
 @media (max-width: 768px) {
   .burger-menu {
     display: block;  /* Appears on smaller screens (eg: mobile) */
