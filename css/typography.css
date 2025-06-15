@@ -86,14 +86,19 @@ a.button{
   font-size: 4rem;
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  margin-top: 0;
 }
 
 .hero-text p {
   font-family: "Rubik", sans-serif;
   font-size: 1.25rem;
-  margin: 1rem 0 2rem;
+  margin-bottom: 3rem;
   /* max-width: 800px; */
 
+}
+
+.hero-availability{
+  font-weight: 600;
 }
 
 /* LOGO CAROUSEL TEXT STYLING */

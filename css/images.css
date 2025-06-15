@@ -22,9 +22,9 @@
 
 
 
-/* Adds a #f2f2f2 background behind the image, making it more visible for users */
+/* Adds a white background behind the image, making it more visible for users */
 .logo-wrapper {
-  background-color: #f2f2f2;
+  background-color: white;
   padding: 0.3rem 0.6rem;
   border-radius: 100px;
   margin-left: 1rem;
@@ -79,7 +79,7 @@
 .logos {
   overflow: hidden;
   padding: 60px 0;
-  background: #f2f2f2;
+  background: white;
   white-space: nowrap;
   position: relative;
 }
@@ -96,12 +96,12 @@
 
 .logos:before {
   left: 0;
-  background: linear-gradient(to left, rgba(255, 255, 255, 0), #f2f2f2);
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
 
 .logos:after {
   right: 0;
-  background: linear-gradient(to right, rgba(255, 255, 255, 0), #f2f2f2);
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
 
 .logos:hover .logos-slide {

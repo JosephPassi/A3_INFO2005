@@ -46,4 +46,4 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
 // Responsible for the slideshow progressing through itself automatically
-setInterval(nextSlide, 15000); // every 1000 == 1s
+//setInterval(nextSlide, 15000); // every 1000 == 1s

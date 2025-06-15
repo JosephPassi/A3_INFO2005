@@ -165,6 +165,8 @@ nav {
   object-fit: cover;
 }
 
+
+
 /* ARROWS & PROGRESS BUTTONS */
 /* Arrows */
 .prev, .next {
@@ -287,7 +289,7 @@ nav {
 /* Footer Styling (Map Included) */
 footer {
   width: 100%;
-  color: #f2f2f2;
+  color: white;
   background-color: #4A174D;
   font-family: "Rubik,sans-serif";
   padding-bottom: 3rem;
