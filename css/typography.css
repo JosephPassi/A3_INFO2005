@@ -155,6 +155,11 @@ a.button{
   text-decoration: none;
 }
 
+.grading-h1{
+  font-size: 1rem;
+  font-weight: 700;
+}
+
 
 /* Have a look at the following (maintain a vertical menu since we don't want to detract from the main focus, being the products 
 

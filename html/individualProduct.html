@@ -63,17 +63,16 @@
 
     <!-- Grading Guide Modal -->
     <div id="grading-modal" class="grading-modal hidden">
-    <div class="grading-content">
-        <button id="close-grading" class="close-button">x</button>
-        <h2>Grading Guide</h2>
-        <ul>
-        <li><strong>Near Mint (NM)</strong><br>Near Mint cards appear fresh out of the pack.</li>
-        <li><strong>Lightly Played (LP)</strong><br>May have a few edge or corner imperfections.</li>
-        <li><strong>Moderately Played (MP)</strong><br>Visible wear, fading or border marks.</li>
-        <li><strong>Heavily Played (HP)</strong><br>Noticeable damage, folding or dirt buildup.</li>
-        <li><strong>Damaged (D)</strong><br>Major damage such as tears or ink/water stains.</li>
-        </ul>
-    </div>
+        <div class="grading-content">
+            <h1 class="grading-h1">Grading Guide</h1><br>
+            <ul>
+                <li><h1 class="grading-h1">Near Mint (NM)</h1>Near Mint cards appear fresh out of the pack.</li>
+                <li><h1 class="grading-h1">Lightly Played (LP)</h1>May have a few edge or corner imperfections.</li>
+                <li><h1 class="grading-h1">Moderately Played (MP)</h1>Visible wear, fading or border marks.</li>
+                <li><h1 class="grading-h1">Heavily Played (HP)</h1>Noticeable damage, folding or dirt buildup.</li>
+                <li><h1 class="grading-h1">Damaged (D)</h1>Major damage such as tears or ink/water stains.</li>
+            </ul>
+        </div>
     </div>
     <div id="modal-backdrop" class="backdrop hidden"></div>
 
@@ -108,11 +107,12 @@
                         <button type="button" class="qty-button" onclick="changeQty(1)">+</button>
                     </div>
                 </div>
-                                <!-- Action icons -->
-                <div class="action-icons">
-                <button title="Wishlist"><img src="/images/icons/wishlist-add.png" alt="Wishlist"></button>
-                <button title="Add to Cart"><img src="/images/icons/add-to-cart.png" alt="Cart"></button>
-                <button title="Compare"><img src="/images/icons/grading.png" alt="Compare"></button>
+                
+                <!-- Action icons -->
+                <div class="action-buttons">
+                    <button class="wishlist-btn"><img src="/images/icons/wishlist-add.png" alt=""> Add to Wishlist</button>
+                    <button class="cart-btn"><img src="/images/icons/add-to-cart.png" alt=""> Add to Cart</button>
+                    <button class="grading-btn"><img src="/images/icons/grading.png" alt=""> Grading Guide</button>
                 </div>
             </div>
             </section>

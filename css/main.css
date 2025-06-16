@@ -3,6 +3,7 @@
 @import url(typography.css);
 @import url(layout.css);
 @import url(images.css);
+@import url(buttons.css);
 
 /* Imports Google Font: Monserrat & Rubik
 These fonts were changed due to heavy re-evaluation, these fonts were deemed to be more better suited and also provided benefits that a single font (with multiple weights) could not offer. In short, the original font was aight, but this is better */
