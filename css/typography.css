@@ -134,7 +134,7 @@ a.button{
 /* Title */
 .product-title {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.25rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
@@ -145,8 +145,8 @@ a.button{
 
 /* Price */
 .product-price {
-  font-size: 1.1rem;
-  font-weight: bold;
+  font-size: 1.5rem;
+  font-weight: 500;
 }
 
 /* Link (removes underline) */

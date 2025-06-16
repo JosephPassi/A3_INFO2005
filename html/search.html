@@ -6,11 +6,12 @@
     <title>Plenty of Games</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <script defer src="/js/viewToggle.js"></script> <!-- defer makes it so that the JS runs after the HTML body -->
 </head>
 <!-- ======================== ### END OF HEAD ### ======================== -->
 
 
-<body>
+<body class="products-multiple">
 
     <!-- ### This section is dedicated to the NavBar (TCG Singles, TCG Sealed, Card Accessories, Merchandise, Search, Cart, Wishlist, Account) ### -->
 
@@ -56,10 +57,29 @@
     </div>
     </nav>
     <!-- ======================== ### END OF NAV ### ======================== -->
-    <section class="page-header">
-        <h1>Single Cards</h1>
-    </section>
     
+    <section class="product-page-header">
+        <div class="page-header-text">
+            <h1 class="page-title">SEARCH RESULTS</h1>
+            <p class="page-subtitle">Showing 06 results for “Mox Diamond”...</p>
+        </div>
+
+    </section>
+    <!-- ======================== ### END OF HEADER ### ======================== --> 
+
+    <div class="view-toggle-wrapper">
+        <div class="view-toggle">
+            <button class="toggle-button grid-view active" title="Grid view">
+                <img src="/images/icons/toggle-grid.png" alt="toggle-grid view" class="toggle-icon">
+            </button>
+            <button class="toggle-button list-view" title="List view">
+                <img src="/images/icons/toggle-list.png" alt="toggle-list view" class="toggle-icon">
+            </button>
+
+        </div>
+    </div>
+
+
     <main class="product-layout">
         
      <!-- Sidebar Filters -->
@@ -143,118 +163,122 @@
         </aside>
 
     <!-- LIST OF PRODUCT CARDS/GRIDS -->
-    <section class="product-grid">
-        
-        <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
-        
-        <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
+        <section class="product-grid">
+            
+            <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
 
-                <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
-        
-        <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
+                    <!-- Button is initially hidden -->
+                    <button class="add-to-cart-button">Add to Cart</button> 
 
-                <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
-        
-        <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
+                </div>
+            </a>
+            
+            <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
 
-                <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
-        
-        <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
+                    <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
+            
+            <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
 
-                <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
-        
-        <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
+                    <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
+            
+            <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
 
-                <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
-        
-        <a href="home.html" class="product-link">
-            <div class="product-card">
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
-                <h3 class="product-title">Mox Diamond</h3>
-                <p class="product-subtitle">[From the Vault: Relics]</p>
-                <p class="product-price">$1,685.20</p>
-            </div>
-        </a>
+                    <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
+            
+            <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
+
+                    <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
+            
+            <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
+
+                    <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
+            
+            <a href="home.html" class="product-link">
+                <div class="product-card">
+                    <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
+                    <h3 class="product-title">Mox Diamond</h3>
+                    <p class="product-subtitle">[From the Vault: Relics]</p>
+                    <p class="product-price">$1,685.20</p>
+                </div>
+            </a>
 
 
-    </section>
+        </section>
     </main>
 
 
@@ -308,3 +332,18 @@
 
 
 </body>
+
+<!-- 
+References:
+https://gridbyexample.com/patterns/header-asmany-footer/
+https://gridbyexample.com/patterns/header-twocol-footer-space/
+https://www.plentyofgames.com.au/pages/advanced-search?q=&game=mtg&availabilty=false&condition=&printing=&setNames=30th%2520anniversary%2520edition%2B30th%2520anniversary%2520history%2520promos%2B30th%2520anniversary%2520promos&colors=&rarities=&types=&pricemin=&pricemax=&page=1&order=price-descending
+
+Attributes:
+<a href="https://www.flaticon.com/free-icons/pixel" title="pixel icons">Pixel icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/grid" title="grid icons">Grid icons created by Freepik - Flaticon</a>
+
+<a href="https://www.flaticon.com/free-icons/symbol" title="symbol icons">Symbol icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/pixel" title="pixel icons">Pixel icons created by Freepik - Flaticon</a>
+
+-->
