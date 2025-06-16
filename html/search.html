@@ -60,8 +60,88 @@
         <h1>Single Cards</h1>
     </section>
     
-    <main>
-    
+    <main class="product-layout">
+        
+     <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+            <div class="filter-title">FILTER</div>
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option>Price: Low to High</option>
+                <option>Price: High to Low</option>
+                <option>Newest</option>
+            </select>
+
+            <label for="category">Category:</label>
+            <select id="category">
+                <option>All</option>
+                <option>Pokemon</option>
+                <option>Magic</option>
+            </select>
+
+            <label for="search">Search Name:</label>
+            <input type="text" id="search" placeholder="e.g. Mox Diamond">
+
+            <label for="availability">Availability:</label>
+            <select id="availability">
+                <option>In Stock</option>
+                <option>Out of Stock</option>
+            </select>
+            
+            <label for="condition">Condition:</label>
+            <select id="condition">
+                <option>Near Mint</option>
+                <option>Lightly Played</option>
+                <option>Moderately Played</option>
+                <option>Heavily Played</option>
+                <option>Damaged</option>
+            </select>
+
+            <label>Price Range:</label>
+            <div class="price-range">
+            <input type="number" id="min-price" placeholder="$0.00">
+            <input type="number" id="max-price" placeholder="$0.00">
+            </div>
+
+            <label for="print-edition">Printing/Edition:</label>
+            <select id="print-edition">
+                <option>Foil</option>
+                <option>Normal</option>
+            </select>
+
+            <!-- This one should be a multiple select option input thingy (Idk how to do that) -->
+            <label for="sets">Sets:</label>
+            <select id="sets" multiple>
+                <option>30th Anniversary Edition</option>
+                <option>30th Anniversary History Promos</option>
+                <option>30th Anniversary Promos</option>
+            </select>
+
+            <label for="color-filter">Colour:</label>
+            <select id="color-filter">
+                <option>Black</option>
+                <option>Red</option>
+                <option>White</option>
+                <option>Blue</option>
+                <option>Colourless</option>
+                <option>Multicolour</option>
+            </select>
+
+            <label for="rarities">Rarities:</label>
+            <select id="rarities">
+                <option>Common</option>
+                <option>Uncommon</option>
+                <option>Rare</option>
+                <option>Mythic</option>
+                <option>Special</option>
+            </select>
+
+
+
+
+            <!-- Add more filters if needed -->
+        </aside>
+
     <!-- LIST OF PRODUCT CARDS/GRIDS -->
     <section class="product-grid">
         
