@@ -16,11 +16,11 @@
     <!-- ### This section is dedicated to the NavBar (TCG Singles, TCG Sealed, Card Accessories, Merchandise, Search, Cart, Wishlist, Account) ### -->
 
     
-    <!-- Cleaned & Polished NavBar Structure -->
     <nav class="nav-bar">
 
     <!-- Styling responsible for: Site Logo - Positioned on the Left -->
     <div class="nav-left">
+        <button class="burger-menu" aria-label="Menu"><img src="/images/icons/menu-stacked.png" alt="Menu Icon" class="burger-icon"></button>  <!-- Hidden on larger screens, only appearing on smaller ones where NavBar would be too large -->
         <a href="home.html" class="logo-wrapper">
         <img src="/images/Primary_Logo_-_Purple_large.webp" alt="Plenty of Games logo" id="logo">
         </a>
@@ -28,7 +28,7 @@
 
     <!-- Center: Nav Links -->
     <ul class="nav-links">
-        <li><a href="home.html" class="nav-link">SINGLE CARDS</a></li>
+        <li><a href="search.html" class="nav-link">SINGLE CARDS</a></li>
         <li><a href="home.html" class="nav-link">SEALED PACKS</a></li>
         <li><a href="home.html" class="nav-link">ACCESSORIES</a></li>
         <li><a href="home.html" class="nav-link">MINIATURES</a></li>
@@ -38,22 +38,20 @@
 
     <!-- Right: Search and Icons -->
     <div class="nav-right">
-        
         <!-- Search Bar -->
         <form class="search-container">
         <input type="text" placeholder="Search Our Catalog...">
         <button type="submit">
-            <img src="/images/search.png" alt="Search Icon">
+            <img src="/images/icons/search.png" alt="Search Icon">
         </button>
         </form>
 
         <!-- CART, WISHLIST, ACCOUNT -->
-        <a href="home.html"><img src="/images/shopping_cart.png" alt="Cart" class="nav-icon"></a>
-        <a href="home.html"><img src="/images/wishlist.png" alt="Wishlist" class="nav-icon"></a>
-        <a href="home.html"><img src="/images/account.png" alt="Account" class="nav-icon"></a>
+        <a href="home.html"><img src="/images/icons/cart.png" alt="Cart" class="nav-icon"></a>
+        <a href="home.html"><img src="/images/icons/wishlist.png" alt="Wishlist" class="nav-icon"></a>
+        <a href="home.html"><img src="/images/icons/account.png" alt="Account" class="nav-icon"></a>
         <!-- For some reason it needs 4 links here or else it will only display 2...fml -->
-        <a href="home.html"><img src="/images/account.png" alt="Account" class="nav-icon"></a>
-
+        <a href="home.html"><img src="/images/icons/account.png" alt="Account" class="nav-icon"></a>
     </div>
     </nav>
     <!-- ======================== ### END OF NAV ### ======================== -->
@@ -61,7 +59,6 @@
     <section class="product-page-header">
         <div class="page-header-text">
             <h1 class="page-title">SEARCH RESULTS</h1>
-            <p class="page-subtitle">Showing 06 results for “Mox Diamond”...</p>
         </div>
 
     </section>
@@ -165,7 +162,7 @@
     <!-- LIST OF PRODUCT CARDS/GRIDS -->
         <section class="product-grid">
             
-            <a href="home.html" class="product-link">
+            <a href="individualProduct.html" class="product-link">
                 <div class="product-card">
                     <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="product-img">
                     <h3 class="product-title">Mox Diamond</h3>
@@ -173,7 +170,7 @@
                     <p class="product-price">$1,685.20</p>
 
                     <!-- Button is initially hidden -->
-                    <button class="add-to-cart-button">Add to Cart</button> 
+                    <button class="add-to-cart-button">Add to Cart<img src="/images/icons/add-to-cart.png" alt="" class="add-to-cart-button-img"></button> 
 
                 </div>
             </a>
@@ -283,51 +280,51 @@
 
 
 
-        <footer>
-    <!-- Footer structure with Flexbox layout -->
-    <div class="footerContainer">
+    <footer>
+        <!-- Footer structure with Flexbox layout -->
+        <div class="footerContainer">
 
-        <!-- Left Column: Contact Info -->
-        <div class="footer-contact">
-        <h2 class="footer-header">CONTACT US</h2>
-        <section class="footer-p">
-            <p>Level 1, 278 Collins Street</p>
-            <p>Melbourne, VIC, 3000</p>
-            <p>Australia</p>
-            <p>shop@plentyofgames.com.au</p>
-        </section>
+            <!-- Left Column: Contact Info -->
+            <div class="footer-contact">
+            <h2 class="footer-header">CONTACT US</h2>
+            <section class="footer-p">
+                <p>Level 1, 278 Collins Street</p>
+                <p>Melbourne, VIC, 3000</p>
+                <p>Australia</p>
+                <p>shop@plentyofgames.com.au</p>
+            </section>
+            </div>
+
+            <!-- Center Column: Map -->
+            <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9002814898777!2d144.96226817662776!3d-37.815804634155946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x81d4e0e486f23881%3A0x186148408b112aec!2sPlenty%20of%20Games!5e0!3m2!1sen!2sau!4v1749987878309!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+
+            <!-- Right Column: Links + Icons -->
+            <div class="footer-info">
+            <h2 class="footer-header">TERMS & CONDITIONS</h2>
+            <section class="footer-p">
+                <p>Terms of Service</p>
+                <p>Refund Policy</p>
+                <p>Privacy Policy</p>
+            </section>
+
+            <h2 class="footer-header">TRADING HOURS</h2>
+            <section class="footer-p">
+                <p>Mon: 1pm - 10pm</p>
+                <p>Tues - Fri: 11am - 10pm</p>
+                <p>Sat/Sun: 10am - 6pm</p>
+                <p>Public Holidays: 11am - 6pm</p>
+            </section>
+            
+            <!-- Social Icons -->
+            <ul id="footerList">
+                <li><a href="#"><img src="/images/icons/instagram.png" class="icons" alt="Instagram"></a></li>
+                <li><a href="#"><img src="/images/icons/facebook.png" class="icons" alt="Facebook"></a></li>
+                <li><a href="#"><img src="/images/icons/twitter.png" class="icons" alt="Twitter"></a></li>
+            </ul>
+            </div>
         </div>
-
-        <!-- Center Column: Map -->
-        <div class="footer-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.9002814898777!2d144.96226817662776!3d-37.815804634155946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x81d4e0e486f23881%3A0x186148408b112aec!2sPlenty%20of%20Games!5e0!3m2!1sen!2sau!4v1749987878309!5m2!1sen!2sau" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-
-        <!-- Right Column: Links + Icons -->
-        <div class="footer-info">
-        <h2 class="footer-header">TERMS & CONDITIONS</h2>
-        <section class="footer-p">
-            <p>Terms of Service</p>
-            <p>Refund Policy</p>
-            <p>Privacy Policy</p>
-        </section>
-
-        <h2 class="footer-header">TRADING HOURS</h2>
-        <section class="footer-p">
-            <p>Mon: 1pm - 10pm</p>
-            <p>Tues - Fri: 11am - 10pm</p>
-            <p>Sat/Sun: 10am - 6pm</p>
-            <p>Public Holidays: 11am - 6pm</p>
-        </section>
-        
-        <!-- Social Icons -->
-        <ul id="footerList">
-            <li><a href="#"><img src="/images/icons/instagram.png" class="icons" alt="Instagram"></a></li>
-            <li><a href="#"><img src="/images/icons/facebook.png" class="icons" alt="Facebook"></a></li>
-            <li><a href="#"><img src="/images/icons/twitter.png" class="icons" alt="Twitter"></a></li>
-        </ul>
-        </div>
-    </div>
     </footer>
 
 
