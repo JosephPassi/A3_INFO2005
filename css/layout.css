@@ -346,3 +346,42 @@ footer {
   transform: scale(1.2);
 }
 
+/* LIST OF PRODUCTS STYLING */
+/* Container grid for products */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Each product card */
+.product-card {
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image */
+.product-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* Title */
+.product-title {
+  margin: 1rem 0 0.25rem;
+}
+
+/* Subtitle */
+.product-subtitle {
+  margin-bottom: 0.5rem;
+}
+

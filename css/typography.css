@@ -124,6 +124,36 @@ a.button{
   font-weight: 300;
 }
 
+/* LIST OF PRODUCTS STYLING */
+
+/* Each product card */
+.product-card {
+  text-align: center;
+}
+
+/* Title */
+.product-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* Subtitle */
+.product-subtitle {
+  font-size: 0.9rem;
+}
+
+/* Price */
+.product-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Link (removes underline) */
+.product-link{
+  text-decoration: none;
+}
+
 
 /* Have a look at the following (maintain a vertical menu since we don't want to detract from the main focus, being the products 
 
