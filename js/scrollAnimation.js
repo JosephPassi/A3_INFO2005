@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
+        entry.target.classList.add('carousel-show');
         observer.unobserve(entry.target); // Remove for animations always playing when scrolling
       }
     });
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Observes all hidden elements
-  const hiddenElements = document.querySelectorAll('.hidden');
+  const hiddenElements = document.querySelectorAll('.carousel-hidden');
   hiddenElements.forEach(el => observer.observe(el));
 });
 
