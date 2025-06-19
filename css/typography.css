@@ -160,6 +160,41 @@ a.button{
   font-weight: 700;
 }
 
+/* SHOPPING CART STYLING */
+.cart-heading {
+  font-weight: 900;
+  font-size: 3rem;
+  text-align: left;
+  padding-bottom: 1rem;
+}
+
+
+/* CONFIRMATION PAGE STYLING */
+/* .confirmationMessage{
+  text-align: center;
+  background-image: url(/images/key-art/celebratePurchase.jpg);
+  padding-bottom: 50vh;
+  background-repeat: no-repeat;
+} */
+
+.confirmationMessage{
+  text-align: center;
+  padding-bottom: 6rem;
+  padding-top: 3rem;
+}
+
+.confirmationMessage img{
+  margin: 0;
+  padding: 0;
+}
+
+.confirmationMessage h1{
+  font-size: 5rem;
+}
+
+.confirmationMessage p{
+  font-size: 2rem;
+}
 
 /* Have a look at the following (maintain a vertical menu since we don't want to detract from the main focus, being the products 
 

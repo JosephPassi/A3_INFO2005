@@ -540,7 +540,7 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  background-color: #A58BA7; /* Example background, tweak to match your theme */
+  background-color: #F2BF1A; /* Example background, tweak to match your theme */
   border-bottom: 4px solid #fff;
   margin-top: 5rem; /* if you removed body padding */
 }
@@ -548,7 +548,7 @@ footer {
 .page-header-text .page-title {
   font-size: 3rem;
   font-weight: 800;
-  color: #ffc800;
+  color: black;
 }
 
 .page-header-text .page-subtitle {
@@ -1175,3 +1175,5 @@ footer {
 .cart-icons{
   height: 20px;
 }
+
+/* CONFIRMATION PAGE STYLING */
