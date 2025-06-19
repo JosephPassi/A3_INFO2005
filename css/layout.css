@@ -458,7 +458,7 @@ footer {
 
 /* FILTER TITLE HEADER */
 .filter-title {
-  background-color: #2c1035;
+  background-color: #4A174D;
   color: white;
   padding: 1rem;
   font-weight: bold;
@@ -479,8 +479,7 @@ footer {
 }
 
 /* Form Controls */
-.filter-sidebar select,
-.filter-sidebar input {
+.filter-sidebar select {
   width: 100%;
   padding: 0.4rem;
   border: 1px solid #ccc;
@@ -488,6 +487,16 @@ footer {
   margin-top: 0.25rem;
   font-size: 0.9rem;
 }
+
+.filter-sidebar input{
+  /* width: 100% */
+  padding: 0.4rem;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
 
 /* Min/Max Inputs Side by Side */
 .price-range {
@@ -735,51 +744,6 @@ footer {
   padding: 0.25rem;
 }
 
-
-/* Related Products */
-.related-products {
-  margin-top: 5rem;
-  padding-bottom: 2rem;
-}
-
-.related-products h2 {
-  background-color: #4A174D;
-  color: white;
-  padding: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.related-grid {
-  display: flex;
-  gap: 1rem;
-  overflow-x: auto;
-  padding-bottom: 1rem;
-  scroll-snap-type: x mandatory;
-
-}
-
-.related-grid img {
-  flex: 0 0 auto;
-  scroll-snap-align: start;
-  cursor: grab;
-}
-
-.related-grid:active img {
-  cursor: grabbing;
-}
-
-.related-grid img {
-  width: 250px;
-  height: auto;
-  border-radius: 4px;
-}
-
-.browse-all-button {
-  margin: 1rem;
-}
 /* ======================================================================================================================================================================================================= */
 
 /* RELATED PRODUCTS STYLING */
@@ -837,7 +801,7 @@ footer {
 
 .product-card.compact {
   flex: 0 0 auto;
-  width: 180px;
+  width: 250px;
   text-align: center;
   text-decoration: none;
 }
@@ -856,7 +820,7 @@ footer {
 
 .product-card.compact .product-subtitle {
   font-size: 0.85rem;
-  color: #666;
+  color: #555;
   margin-bottom: 0.3rem;
 }
 
