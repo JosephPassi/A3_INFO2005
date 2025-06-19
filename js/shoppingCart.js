@@ -3,52 +3,51 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   function updateItemTotal(row) {
-    const unitPrice = parseFloat(row.querySelector('.cart-item__price').dataset.price);
-    const quantity = parseInt(row.querySelector('.quantity-value').textContent);
+    const priceText = row.querySelector('.cart-price').textContent;
+    const unitPrice = parseFloat(priceText.replace(/[^0-9.]/g, '')) || 0;
+    const quantity = parseInt(row.querySelector('.qty').textContent);
     const total = (unitPrice * quantity).toFixed(2);
-    row.querySelector('.cart-item__total').textContent = `$${total}`;
+    row.querySelector('.cart-total').textContent = `$${total}`;
   }
 
   function updateCartTotal() {
     let total = 0;
     document.querySelectorAll('.cart-item').forEach(row => {
-      const itemTotalText = row.querySelector('.cart-item__total').textContent;
-      const itemTotal = parseFloat(itemTotalText.replace('$', '')) || 0;
+      const itemTotalText = row.querySelector('.cart-total').textContent;
+      const itemTotal = parseFloat(itemTotalText.replace(/[^0-9.]/g, '')) || 0;
       total += itemTotal;
     });
-    document.querySelector('.cart-total-price').textContent = `$${total.toFixed(2)}`;
+    document.getElementById('cart-grand-total').textContent = `$${total.toFixed(2)}`;
   }
 
   // Quantity increase
-  document.querySelectorAll('.quantity-increase').forEach(button => {
+  document.querySelectorAll('.qty-button:nth-of-type(2)').forEach(button => {
     button.addEventListener('click', () => {
       const row = button.closest('.cart-item');
-      const quantitySpan = row.querySelector('.quantity-value');
-      let quantity = parseInt(quantitySpan.textContent);
-      quantity++;
-      quantitySpan.textContent = quantity;
+      const qtySpan = row.querySelector('.qty');
+      let quantity = parseInt(qtySpan.textContent);
+      qtySpan.textContent = ++quantity;
       updateItemTotal(row);
       updateCartTotal();
     });
   });
 
   // Quantity decrease
-  document.querySelectorAll('.quantity-decrease').forEach(button => {
+  document.querySelectorAll('.qty-button:nth-of-type(1)').forEach(button => {
     button.addEventListener('click', () => {
       const row = button.closest('.cart-item');
-      const quantitySpan = row.querySelector('.quantity-value');
-      let quantity = parseInt(quantitySpan.textContent);
+      const qtySpan = row.querySelector('.qty');
+      let quantity = parseInt(qtySpan.textContent);
       if (quantity > 1) {
-        quantity--;
-        quantitySpan.textContent = quantity;
+        qtySpan.textContent = --quantity;
         updateItemTotal(row);
         updateCartTotal();
       }
     });
   });
 
-  // Delete item
-  document.querySelectorAll('.delete-item').forEach(button => {
+  // Remove item
+  document.querySelectorAll('.remove-btn').forEach(button => {
     button.addEventListener('click', () => {
       const row = button.closest('.cart-item');
       row.remove();
@@ -56,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  // Initial calc (in case you load from saved data)
+  // Initial calculation
   document.querySelectorAll('.cart-item').forEach(row => {
     updateItemTotal(row);
   });
