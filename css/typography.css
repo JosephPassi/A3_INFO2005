@@ -161,8 +161,8 @@ a.button{
 }
 
 /* SHOPPING CART STYLING */
-.cart-heading {
-  font-weight: 900;
+.cart-heading{
+  font-weight: 600;
   font-size: 3rem;
   text-align: left;
   padding-bottom: 1rem;

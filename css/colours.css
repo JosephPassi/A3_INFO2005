@@ -176,3 +176,8 @@ nav{
 .product-price {
   color: #8b008b;
 }
+
+/* SHOPPING CART STYLING */
+.cart-item{
+  background-color: gray;
+}

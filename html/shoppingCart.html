@@ -6,6 +6,7 @@
     <title>Plenty of Games</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    <script defer src="/js/shoppingCart.js"></script> <!-- defer makes it so that the JS runs after the HTML body -->
 
 
 
@@ -71,35 +72,25 @@
             <tr>
                 <th class="cart-heading">Product</th>
                 <th class="cart-heading">Price</th>
+                <th class="cart-heading">Quality</th>
+                <th class="cart-heading">Quantity</th>
                 <th class="cart-heading">Total</th>
+
             </tr>
             </thead>
         <tbody>
             <tr class="cart-item">
-            <td>
-                <img src="/images/products/magic/mox_diamond.webp" alt="Mox Diamond" class="cart-img" />
-                <div class="cart-details">
-                <strong>Mox Diamond</strong>
-                <p class="cart-subtitle">[From the Vault: Relics]</p>
-                <div class="quantity-controls">
-                    <button class="qty-button">-</button>
-                    <span class="qty">1</span>
-                    <button class="qty-button">+</button>
-                </div>
-                <select>
-                    <option>Select Condition</option>
-                    <option>Near Mint</option>
-                    <option>Lightly Played</option>
-                </select>
-                <div class="cart-icons">
-                    <button class="wishlist-btn"><img src="/images/icons/wishlist-add.png" alt="" class="cart-icons"></button>
-                    <button class="grading-btn"><img src="/images/icons/grading.png" alt="" class="cart-icons"></button>
-                    <button class="remove-btn"><img src="/images/icons/trash.png" alt="" class="cart-icons"></button>
-                </div>
-                </div>
-            </td>
-            <td class="cart-price">$1,685.20</td>
-            <td class="cart-total">$1,685.20</td>
+                <td class="cart-item__image"><img src="/images/products/magic/mox_diamond.webp" /></td>
+                <td class="cart-item__details">Product name etc.</td>
+                <td class="cart-item__condition">New</td>
+                <td class="cart-item__price" data-price="2227.80"></td>
+                <td class="cart-item__quantity">
+                    <button class="quantity-decrease">-</button>
+                    <span class="quantity-value">1</span>
+                    <button class="quantity-increase">+</button>
+                </td>
+                <td class="cart-item__total">$49.99</td>
+                <td class="cart-item__actions"><button class="delete-item">x</button></td>
             </tr>
         </tbody>
         </table>
